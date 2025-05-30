@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="icon" type="image/svg+xml" href="./assets/images/jedi.svg" />
+        <link rel="stylesheet" href="./css/globals.css"/>
+        <link rel="stylesheet" href="./css/home.css"/>
+
+        <script src="./js/favicon.js"></script>
+
+        <title>Filipe Skywalker</title>
+    </head>
+
+    <body>
+
+        <div id="intro-screen">
+            <img src="./assets/images/jedi-dark.svg" alt="jedi" class="intro-logo">
+        </div>
+
+        <!-- LOADER -->
+        <div id="loader-wrapper">
+            <div class="loader"></div>
+        </div>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <div id="main-content">
+            <!-- NAVBAR -->
+            <div class="container">
+                <ul>
+                    <li><a href="./pages/team.html" onclick="showLoader()">Habilidades</a></li>
+                    <li><a href="./pages/sponsors.html" onclick="showLoader()">Sobre Mim</a></li>
+                    <li>
+                        <a class="logo" href="#home">
+                            <img src="./assets/images/jedi-dark.svg" class="active" alt="jedi logo" />
+                        </a>
+                    </li>
+                    <li><a href="./pages/contact.html" onclick="showLoader()">Competições</a></li>
+                    <li><a href="./pages/about.html" onclick="showLoader()">Projetos</a></li>
+                </ul>
+            </div>
+
+            <section class="title">
+                
+                <h1>Filipe Skywalker</h1>
+                <p>In a galaxy far far away...</p>
+                
+                <video autoplay muted loop playsinline class="background-video">
+                     <source src="./assets/videos/galaxy2.mp4" type="video/mp4" />
+                     Your browser does not support the video tag
+                </video>
+
+                <section class="about">
+                <h2>Who am I</h2>
+                <p>Something, something, something</p>
+                <p>More something, more something, and more...</p>
+                <a href="./pages/about.html" class="btn-primary" onclick="showLoader()">See more</a>
+            </section>
+            </section>
+        </div>
+
+        <script src="./js/intro.js"></script>
+        <script src="./js/loader.js"></script>
+    </body>
+</html>
