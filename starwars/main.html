@@ -1,30 +1,29 @@
-<!-- /pascal-wars/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Pascal Wars</title>
+  <title>Pascal Triangle Battleship</title>
   <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-  <h1>🚀 Pascal Wars: The Binomial Rebellion</h1>
-
-  <div id="lobby">
-    <input type="text" id="roomCode" placeholder="Room Code" />
-    <button onclick="createRoom()">Create Room</button>
-    <button onclick="joinRoom()">Join Room</button>
-  </div>
-
-  <div id="game" style="display: none;">
-    <p id="status">Waiting for other player...</p>
-    <canvas id="gameCanvas" width="500" height="500"></canvas>
-    <div>
-      <input type="number" id="n" placeholder="n" />
-      <input type="number" id="k" placeholder="k" />
-      <button onclick="fire()">Fire Binomial Laser</button>
+  <h1>Pascal Triangle Battleship</h1>
+  <div id="game">
+    <div class="player-section" id="player1-section">
+      <h2>Player 1</h2>
+      <table id="player1-board" class="board"></table>
+    </div>
+    <div class="player-section" id="player2-section">
+      <h2>Player 2</h2>
+      <table id="player2-board" class="board"></table>
     </div>
   </div>
-
+  <div id="controls">
+    <button id="start-game">Start Battle</button>
+    <div id="turn-indicator">Player 1's Turn</div>
+    <input type="text" id="binomial-input" placeholder="Enter (n/k)">
+    <button id="submit-answer">Submit</button>
+    <div id="message"></div>
+  </div>
   <script src="./main.js"></script>
 </body>
 </html>
