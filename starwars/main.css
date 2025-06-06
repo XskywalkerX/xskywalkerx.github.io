@@ -133,7 +133,7 @@ h2 {
   font-size: 18px;
   font-weight: bold;
   background: linear-gradient(145deg, #FFE81F, #FFD700);
-  border: 2px solid #fff;
+  border: none;
   color: #000;
   border-radius: 8px;
   cursor: pointer;
