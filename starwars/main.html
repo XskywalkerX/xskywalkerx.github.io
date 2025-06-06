@@ -6,19 +6,24 @@
   <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-  <h1>Pascal Triangle Battleship</h1>
+
+  <video autoplay muted loop playsinline class="background-video">
+    <source src="../assets/videos/galaxy2.mp4" type="video/mp4" />
+    Your browser does not support the video tag
+  </video>
+  <h1>Guerra NAS ESTRELAS</h1>
   <div id="game">
     <div class="player-section" id="player1-section">
-      <h2>Player 1</h2>
+      <h2>Jogador 1</h2>
       <table id="player1-board" class="board"></table>
     </div>
     <div class="player-section" id="player2-section">
-      <h2>Player 2</h2>
+      <h2>Jogador 2</h2>
       <table id="player2-board" class="board"></table>
     </div>
   </div>
   <div id="controls">
-    <button id="start-game">Start Battle</button>
+    <button id="start-game">Começar Confronto</button>
     <div id="turn-indicator">Player 1's Turn</div>
     <input type="text" id="binomial-input" placeholder="Enter (n/k)">
     <button id="submit-answer">Submit</button>
