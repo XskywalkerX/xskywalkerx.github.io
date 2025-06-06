@@ -18,7 +18,7 @@ function joinRoom() {
 
 function connectToServer() {
   // NOTE: replace URL when backend is ready
-  socket = new WebSocket("wss://your-ws-server-url");
+  socket = new WebSocket("wss://xskywalkerx-github-io.onrender.com");
 
   socket.onopen = () => {
     socket.send(JSON.stringify({
