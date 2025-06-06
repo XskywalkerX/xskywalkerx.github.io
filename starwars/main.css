@@ -1,0 +1,22 @@
+/* /pascal-wars/style.css */
+body {
+  background: radial-gradient(circle, #0f0f2d, #000);
+  color: #00ffcc;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  padding: 20px;
+}
+
+input, button {
+  font-size: 16px;
+  margin: 5px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+canvas {
+  background-color: #111;
+  border: 2px solid #00ffcc;
+  margin: 10px auto;
+}

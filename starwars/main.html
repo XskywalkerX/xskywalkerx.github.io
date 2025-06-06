@@ -1,0 +1,30 @@
+<!-- /pascal-wars/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pascal Wars</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🚀 Pascal Wars: The Binomial Rebellion</h1>
+
+  <div id="lobby">
+    <input type="text" id="roomCode" placeholder="Room Code" />
+    <button onclick="createRoom()">Create Room</button>
+    <button onclick="joinRoom()">Join Room</button>
+  </div>
+
+  <div id="game" style="display: none;">
+    <p id="status">Waiting for other player...</p>
+    <canvas id="gameCanvas" width="500" height="500"></canvas>
+    <div>
+      <input type="number" id="n" placeholder="n" />
+      <input type="number" id="k" placeholder="k" />
+      <button onclick="fire()">Fire Binomial Laser</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
