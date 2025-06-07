@@ -95,7 +95,7 @@ function updateBoardVisibility() {
         if (!gameStarted) {
           cell.style.visibility = (p === placingPlayer) ? 'visible' : 'hidden';
         } else {
-          cell.style.visibility = 'hidden';
+          cell.style.visibility = 'visible';
           if (isHit) {
             cell.classList.add('hit');
           } else if (p === currentPlayer) {
